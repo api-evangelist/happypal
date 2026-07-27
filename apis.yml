@@ -1,7 +1,28 @@
 aid: happypal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/happypal.png
 name: Happypal
-description: Happypal is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Happypal (HappyPal) is a Paris-based HR-tech and fintech company, founded in
+  2019, that operates the most widely used digital platform for French works
+  councils (Comite Social et Economique, or CSE). The SaaS and payment platform
+  lets CSE administrators distribute employee benefits and perks, manage budgets
+  and accounting, run ticketing and gift-voucher (cheques-cadeaux) programs, and
+  engage more than 500,000 beneficiaries through a mobile app. Happypal replaces
+  paper gift vouchers with a dematerialized SaaS-plus-fintech model targeting
+  France's employee-benefits market. It is a portfolio company of Anthemis.
+  Happypal does not currently publish a public developer portal, API reference,
+  or SDKs; this profile captures its public web and identity surface.
 url: https://raw.githubusercontent.com/api-evangelist/happypal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Employee Benefits
+- HR Tech
+- Fintech
+- Works Council
+- CSE
+- Perks
+- France
+- SaaS
 apis: []
+common:
+- type: DomainSecurity
+  url: security/happypal-domain-security.yml
+- type: Website
+  url: https://www.happypal.fr
+- type: Login
+  url: https://app.happypal.fr/
+- type: Blog
+  url: https://www.happypal.fr/blog
+- type: GitHubOrganization
+  url: https://github.com/happypal-tech
+- type: TermsOfService
+  url: https://www.happypal.fr/cgu
+- type: PrivacyPolicy
+  url: https://www.happypal.fr/politique-de-confidentialite
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
